@@ -1,0 +1,36 @@
+.gallery_contenedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  padding-top: 120px;
+  background-color: #ababae;
+}
+.gallery_contenedor h3 p {
+  color: #444141;
+}
+.iframe_maps {
+  width: 90%;
+  padding-bottom: 30px;
+}
+@media (max-width: 992px) {
+  .gallery_contenedor {
+    padding-top: 80px;
+  }
+  .sanpedro_1 {
+    padding-top: 10px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .sanpedro_2 {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

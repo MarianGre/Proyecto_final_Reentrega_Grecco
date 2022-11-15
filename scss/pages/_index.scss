@@ -1,0 +1,165 @@
+// Inicio navbar
+.nav-link {
+  font-size: 0, 8rem;
+  color: #ffffff !important;
+}
+.navbar {
+  background-color: #9b9b9b;
+}
+//   Inicio main
+.content {
+  z-index: 10;
+  padding-top: 50px;
+  & h1 {
+    font-family: Montserrat-Light;
+    font-size: 1.5rem;
+    line-height: 1;
+    margin-bottom: 15px;
+    margin-top: 50px;
+  }
+  & p {
+    font-family: Montserrat-Light;
+    font-size: 1rem;
+  }
+}
+.main_pricipal {
+  width: 100vw;
+  height: 33vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #c3beb1;
+}
+.video-container {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+}
+.video-container:after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 51%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.video-container video {
+  min-width: 100vw;
+  position: absolute;
+  top: 22%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+// Inicio Philosophy seccion
+.philosophy_seccion {
+  padding-top: 50px;
+  background-color: #c3beb1;
+}
+// inicio galeria
+.galerie_container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #aca89c;
+  & _title {
+    color: #444141;
+  }
+  & _parrafo {
+    color: #444141;
+  }
+}
+.box {
+  padding: 10px;
+}
+// Inicio footer
+.footer_container {
+  width: 100vw;
+  height: 35vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  color: #ffffff;
+  & _wrapper a {
+    font-size: 2rem;
+    font-family: Montserrat-Regular;
+  }
+  & _lastline {
+    font-family: Montserrat-Thin;
+  }
+}
+@media (min-width: 768px) {
+  .video-container:after {
+    height: 61%;
+  }
+  .philosophy_seccion {
+    padding-top: 80px;
+    padding-left: 120px;
+    & _wrapper {
+      width: 90%;
+      text-align: center;
+    }
+  }
+  .galerie_container {
+    padding-left: 50px;
+    & _parrafo {
+      width: 90%;
+      padding-top: 70px;
+    }
+  }
+}
+@media (min-width: 992px) {
+  //   Inicio main
+  .content h1 {
+    font-size: 5rem;
+  }
+  .content p {
+    font-size: 2rem;
+  }
+  .main_pricipal {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    padding: 0 20px;
+  }
+  .video-container {
+    top: 10px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .video-container:after {
+    width: 100%;
+    height: 100%;
+  }
+  .video-container video {
+    min-width: 100vw;
+    min-height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  // Philosophy seccion
+  .philosophy_seccion {
+    padding-top: 60px;
+    padding-right: 100px;
+  }
+  // Gallery seccion
+  .galerie_container {
+    padding-right: 60px;
+  }
+  // Inicio footer
+  .footer_container {
+    height: 40vh;
+    & _wrapper a {
+      font-size: 2.5rem;
+    }
+  }
+}

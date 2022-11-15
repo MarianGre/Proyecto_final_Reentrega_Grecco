@@ -1,0 +1,28 @@
+.main_contacto_container {
+  padding-top: 115px;
+  background-image: url(../img/contactos_portada.png);
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & _form {
+    padding: 30px;
+  }
+}
+.main_contacto_container:after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 992px) {
+  .main_contacto_container {
+    padding-top: 100px;
+  }
+}
